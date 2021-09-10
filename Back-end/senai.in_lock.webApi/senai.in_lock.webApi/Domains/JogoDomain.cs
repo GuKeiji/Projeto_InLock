@@ -1,4 +1,5 @@
-﻿using System;
+﻿using senai.inlock.webApi.Domains;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,5 +14,6 @@ namespace senai.in_lock.webApi.Domains
         public DateTime dataLancamento { get; set; }
         public float valor { get; set; }
         public int idEstudio { get; set; }
+        public EstudioDomain estudio { get; set; }
     }
 }

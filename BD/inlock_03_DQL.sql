@@ -11,7 +11,7 @@ SELECT J.idJogo,
 	   J.descricao, 
 	   J.dataLancamento [Data de Lançamento], 
 	   J.valor, 
-	   E.nomeEstudio 
+	   E.nomeEstudio [Nome do Estudio] 
   FROM JOGO J
  INNER JOIN ESTUDIO E
     ON J.idEstudio = E.idEstudio
