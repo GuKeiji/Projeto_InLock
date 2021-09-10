@@ -28,3 +28,17 @@ E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.web
 E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\obj\Debug\net5.0\ref\senai.in_lock.webApi.dll
 E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\obj\Debug\net5.0\senai.in_lock.webApi.pdb
 E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\obj\Debug\net5.0\senai.in_lock.webApi.genruntimeconfig.cache
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\obj\Debug\net5.0\senai.in_lock.webApi.MvcApplicationPartsAssemblyInfo.cs
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\bin\Debug\net5.0\senai.in_lock.webApi.xml
+E:\HD\SENAI-2ºT\sprint_2_InLock\Back-end\senai.in_lock.webApi\senai.in_lock.webApi\obj\Debug\net5.0\senai.in_lock.webApi.xml

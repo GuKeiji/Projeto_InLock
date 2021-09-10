@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai.in_lock.webApi.Domains;
 using senai.in_lock.webApi.Interfaces;
@@ -16,6 +17,7 @@ namespace senai.inlock.webApi.Controller
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EstudiosController : ControllerBase
     {
         private IEstudioRepository _estudioRepository { get; set; }
@@ -24,6 +26,7 @@ namespace senai.inlock.webApi.Controller
             _estudioRepository = new EstudioRepository();
         }
 
+        [Authorize(Roles = "ADMINISTRADOR, COMUM")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -32,6 +35,7 @@ namespace senai.inlock.webApi.Controller
             return Ok(listaEstudios);
         }
 
+        [Authorize(Roles = "ADMINISTRADOR, COMUM")]
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -45,6 +49,7 @@ namespace senai.inlock.webApi.Controller
             return Ok(estudioBuscado);
         }
 
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPost]
         public IActionResult Post(EstudioDomain novoEstudio)
         {
@@ -54,6 +59,7 @@ namespace senai.inlock.webApi.Controller
             return StatusCode(201);
         }
 
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpDelete("excluir/{id}")]
         public IActionResult Delete(int id)
         {
@@ -61,6 +67,7 @@ namespace senai.inlock.webApi.Controller
             return NoContent();
         }
 
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPut]
         public IActionResult PutIdBody(EstudioDomain estudioAtualizado)
         {

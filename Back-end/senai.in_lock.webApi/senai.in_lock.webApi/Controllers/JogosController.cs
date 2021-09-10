@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai.in_lock.webApi.Domains;
 using senai.in_lock.webApi.Interfaces;
@@ -14,6 +15,7 @@ namespace senai.in_lock.webApi.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class JogosController : ControllerBase
     {
         private IJogoRepository _jogoRepository { get; set; }
@@ -22,6 +24,7 @@ namespace senai.in_lock.webApi.Controllers
             _jogoRepository = new JogoRepository();
         }
 
+        [Authorize(Roles = "ADMINISTRADOR, COMUM")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -30,6 +33,7 @@ namespace senai.in_lock.webApi.Controllers
             return Ok(listaJogos);
         }
 
+        [Authorize(Roles = "ADMINISTRADOR, COMUM")]
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -43,6 +47,7 @@ namespace senai.in_lock.webApi.Controllers
             return Ok(jogoBuscado);
         }
 
+        [Authorize (Roles = "ADMINISTRADOR")]
         [HttpPost]
         public IActionResult Post(JogoDomain novoJogo)
         {
@@ -52,6 +57,7 @@ namespace senai.in_lock.webApi.Controllers
             return StatusCode(201);
         }
 
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpDelete("excluir/{id}")]
         public IActionResult Delete(int id)
         {
@@ -59,6 +65,7 @@ namespace senai.in_lock.webApi.Controllers
             return NoContent();
         }
 
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPut]
         public IActionResult PutIdBody(JogoDomain jogoAtualizado)
         {

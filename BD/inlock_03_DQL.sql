@@ -4,6 +4,7 @@ GO
 SELECT * FROM JOGO
 SELECT * FROM USUARIO
 SELECT * FROM ESTUDIO
+SELECT * FROM TIPOUSUARIO
 
 --Listar todos os jogos e seus respectivos estúdios
 SELECT J.idJogo, 
@@ -33,6 +34,7 @@ SELECT *
   FROM USUARIO
  WHERE email = 'admin@admin.com'
    AND senha = 'admin'
+
 
 --Buscar um jogo por idJogo
 SELECT *
