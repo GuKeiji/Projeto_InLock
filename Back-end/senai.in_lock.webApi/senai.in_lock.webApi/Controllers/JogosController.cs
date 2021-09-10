@@ -67,7 +67,7 @@ namespace senai.in_lock.webApi.Controllers
                 return BadRequest(
                     new
                     {
-                        mensagemErro = "Nome ou o id do jogo não foi informado!"
+                        mensagemErro = "Alguma informação do jogo não foi informada!"
                     });
             }
 
